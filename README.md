@@ -24,7 +24,7 @@ Please note that this project is intended as a learning exercise and demonstrati
 
 1. **Clone the Repository:**
 
-git clone https://github.com/your-username/scraper.git
+git clone https://github.com/ProgrammerAhmedO/Scraper.git
 cd scraper
 
 arduino
@@ -32,12 +32,10 @@ Copy code
 
 2. **Install Dependencies:**
 
-Ensure you have Python 3.x installed. Create and activate a virtual environment (optional but recommended), then install the required packages:
-
+Ensure you have Python 3.9 installed or higher. Create and activate a virtual environment (optional but recommended), then install the required packages:
+```python
 pip install -r requirements.txt
-
-bash
-Copy code
+```
 
 3. **Database Configuration:**
 
@@ -54,34 +52,46 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-Apply Migrations:
+```
+3.1. Apply Migrations:
 Apply the initial database migrations:
-Copy code
+```python
 python manage.py migrate
-Create Superuser:
+```
+3.2. Create Superuser:
 Create a superuser with the username "Puffin" and password "puffinpuffin123":
-Copy code
+```python
 python manage.py createsuperuser
-Usage
+```
 
-Run the Development Server:
+## Usage:
+   
+4.1 Run the Development Server:
 Start the development server:
-Copy code
+```python
 python manage.py runserver
+```
 The application will be accessible at http://localhost:8000/.
-Access the Admin Panel:
+4.2. Access the Admin Panel:
 Open the admin panel by visiting http://localhost:8000/admin/ and logging in with your superuser credentials.
-Run the Web Scraper:
+4.3. Run the Web Scraper:
 To run the web scraper manually, use the following command:
-Copy code
+```python
 python manage.py scrape_data
+```
 This will scrape data from a specified website, store it in the database, and display a success message.
-API Documentation
+<img width="922" alt="Screenshot 2023-08-29 at 1 43 01 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/46902195-e5a4-4653-b558-269053b7b1a8">
+<img width="1438" alt="Screenshot 2023-08-29 at 1 47 24 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/5924a38f-4e65-4b8e-a698-e9d84a758b18">
+<img width="1438" alt="Screenshot 2023-08-29 at 1 47 31 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/cc9084ae-326f-44b6-bfe4-e4279c751a99">
 
-The API exposes the scraped data and supports filtering based on specific criteria. To access the API, use the following URL: http://localhost:8000/api/data/.
+## API Documentation
 
-To filter the data, you can use query parameters. For example, to filter data with titles containing the word "example," use the URL: http://localhost:8000/api/data/?title_contains=example.
+The API exposes the scraped data and supports filtering based on specific criteria. To access the API, use the following URL: **http://localhost:8000/api/data/.**
+<img width="1438" alt="Screenshot 2023-08-29 at 1 43 36 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/fbc9d036-0c33-40e5-8281-d2b3e84c5db5">
 
-Superuser Access
+To filter the data, you can use query parameters. For example, to filter data with titles containing the word "example," use the URL: **http://localhost:8000/api/data/?title_contains=example.**
+<img width="1438" alt="Screenshot 2023-08-29 at 1 44 13 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/b5e37a64-822c-4e57-a937-cf82fe554917">
 
-As mentioned earlier, a superuser account with the username "Puffin" and password "puffinpuffin123" has been created. You can use this account to access the Django admin panel and explore the application's functionality.
+## Superuser Access
+
+As mentioned earlier, a superuser account with the username **"Puffin"** and password **"puffinpuffin123"** has been created. You can use this account to access the Django admin panel and explore the application's functionality.
