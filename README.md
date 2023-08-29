@@ -109,6 +109,8 @@ To filter the data, you can use query parameters. For example, to filter data wi
 The API exposes the scraped data and supports filtering based on specific criteria. To access the API, use the following URL: **http://localhost:8000/scraped_data/.**
 To filter the data, you can use query parameters. For example, to filter data with titles containing the word "example," use the URL: **http://localhost:8000/scraped_data/?title=example.**
 
+<img width="1438" alt="Screenshot 2023-08-29 at 10 12 43 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/fb8980d2-d7a2-4b49-8541-39898cdf1459">
+<img width="1438" alt="Screenshot 2023-08-29 at 10 12 59 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/495d429f-de93-464c-86b0-954be2740e9b">
 
 ## Superuser Access
 
