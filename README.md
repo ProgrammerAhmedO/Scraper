@@ -84,6 +84,18 @@ This will scrape data from a specified website, store it in the database, and di
 <img width="1438" alt="Screenshot 2023-08-29 at 1 47 24 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/5924a38f-4e65-4b8e-a698-e9d84a758b18">
 <img width="1438" alt="Screenshot 2023-08-29 at 1 47 31 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/cc9084ae-326f-44b6-bfe4-e4279c751a99">
 
+## Usage (FastAPI Application):
+
+1. **Run the Development Server:**
+
+   Start the FastAPI development server:
+   
+   ```python
+   uvicorn main:app --reload --port 8000
+   ```
+The application will be accessible at http://localhost:8000/.
+
+
 ## API Documentation
 
 The API exposes the scraped data and supports filtering based on specific criteria. To access the API, use the following URL: **http://localhost:8000/api/data/.**
@@ -91,6 +103,12 @@ The API exposes the scraped data and supports filtering based on specific criter
 
 To filter the data, you can use query parameters. For example, to filter data with titles containing the word "example," use the URL: **http://localhost:8000/api/data/?title_contains=example.**
 <img width="1438" alt="Screenshot 2023-08-29 at 1 44 13 PM" src="https://github.com/ProgrammerAhmedO/Scraper/assets/84571800/b5e37a64-822c-4e57-a937-cf82fe554917">
+
+
+## Access the API (FastAPI Application):
+The API exposes the scraped data and supports filtering based on specific criteria. To access the API, use the following URL: **http://localhost:8000/scraped_data/.**
+To filter the data, you can use query parameters. For example, to filter data with titles containing the word "example," use the URL: **http://localhost:8000/scraped_data/?title=example.**
+
 
 ## Superuser Access
 
